@@ -104,7 +104,7 @@ class MyHomePage extends StatelessWidget {
                     Text('GPA: X.XX'),
                     Text('GPA: Y.YY'),
                     Text('GPA: Z.ZZ'),
-                    Text('Major:Computer Scients')
+                    Text('Major:Computer Scient')
                   ],
                 ),
               ],
