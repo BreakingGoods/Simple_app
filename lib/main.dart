@@ -104,6 +104,7 @@ class MyHomePage extends StatelessWidget {
                     Text('GPA: X.XX'),
                     Text('GPA: Y.YY'),
                     Text('GPA: Z.ZZ'),
+                    Text('Major:Computer Scients')
                   ],
                 ),
               ],
@@ -117,6 +118,7 @@ class MyHomePage extends StatelessWidget {
             SizedBox(height: 10), // Reduced space between rows
             Row(
               children: [
+                Text('N/A'),
                 Text('N/A'),
               ],
             ),
