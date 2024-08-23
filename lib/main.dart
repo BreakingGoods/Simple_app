@@ -1,130 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_resume_test_2/screen/Menu.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  runApp(MaterialApp(
+    title: "Simple App",
+    home: Scaffold(
       appBar: AppBar(
-        title: const Text('App Bar Hello World'),
-      ),
-      body: const Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // Image was missing, so it was removed from here
-                SizedBox(width: 10), // Space between text and image
-                Text(
-                  'Resume',
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image(
-                  image: AssetImage('assets/Fpic.jpg'),
-                  width: 100,
-                  height: 100,
-                ),
-              ],
-            ),
-            SizedBox(height: 20), // Space below the rowS
-            Row(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('First Name: Kongpob'),
-                    Text('Last Name: Boonma'),
-                  ],
-                ),
-              ],
-            ),
-            SizedBox(height: 10), // Reduced space between rows
-            Row(
-              children: [
-                Text('Hobby: Reading a novel'),
-              ],
-            ),
-            SizedBox(height: 10), // Reduced space between rows
-            Row(
-              children: [
-                Text(
-                  'Education:',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-            SizedBox(height: 10), // Reduced space between rows
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('Primary: Wangdin school'),
-                    Text('Secondary: T.U.N.U School'),
-                    Text('UnderGrad: Naresuan University'),
-                  ],
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text('GPA: X.XX'),
-                    Text('GPA: Y.YY'),
-                    Text('GPA: Z.ZZ'),
-                    Text('Major:Computer Scient')
-                  ],
-                ),
-              ],
-            ),
-            SizedBox(height: 10), // Reduced space between rows
-            Row(
-              children: [
-                Text('ผลงานพัฒนาระบบฯ:'),
-              ],
-            ),
-            SizedBox(height: 10), // Reduced space between rows
-            Row(
-              children: [
-                Text('N/A'),
-                Text('N/A'),
-              ],
-            ),
-          ],
+        title: Text("Simple App"),
         ),
-      ),
-    );
-  }
+      body: Menu(),
+    ),
+  ));
 }
+
